@@ -20,7 +20,6 @@
 body {
     font-family: var(--ff-Primary);
     font-size: 18px;
-    color: var(--clr-Grayish_Blue);
 }
 
 ul,
@@ -28,54 +27,123 @@ li,
 a {
     list-style-type: none;
     text-decoration: none;
-    color: var(--clr-Dark_Blue);
 }
 
 .max-width {
     max-width: 1440px;
     margin: auto;
+    padding: 0 100px;
+    position: relative;
 }
 
+/* Navbar Section Styling */
+
 .navbar {
-    padding: 40px 100px;
+    padding: 40px 0;
     display: flex;
     justify-content: space-between;
     font-size: 0.85rem;
     align-items: center;
 }
 
-.navigation {
+.navbar .navigation {
     display: flex;
     align-items: center;
     gap: 40px;
 }
 
-.navigation li {
+.navbar .navigation li {
     text-transform: uppercase;
     font-weight: 500;
     color: var(--clr-Dark_Blue)
 }
 
-.navigation li:hover {
+.navbar .navigation li:hover {
     color: var(--clr-Soft_Red);
 }
 
 
-.navigation .btn {
+.navbar .navigation .btn {
     border: 2px solid var(--clr-Soft_Red);
     padding: 10px 30px;
     border-radius: 5px;
     background-color: var(--clr-Soft_Red);
 }
 
-.navigation .btn {
+.navbar .navigation .btn {
     color: white;
 }
 
-.navigation .btn:hover {
+.navbar .navigation .btn:hover {
     color: var(--clr-Soft_Red);
 }
 
-.navigation .btn:hover {
+.navbar .navigation .btn:hover {
     background-color: transparent;
 }
+
+/* Main Section Styling */
+
+header {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+}
+
+header .block:nth-child(1){
+    max-width: 420px;
+    margin-right: 60px;
+    position: relative;
+    bottom: 25px;
+}
+
+header .block:nth-child(1) .title {
+    font-size: 2.6rem;
+    margin-bottom: 30px;
+    color: var(--clr-Dark_Blue);
+}
+
+header .block:nth-child(1) .description {
+    color: var(--clr-Grayish_Blue);
+    margin-bottom: 30px;
+}
+
+header .block:nth-child(1) button {
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+header .block:nth-child(1) button:hover {
+    cursor: pointer;
+    scale: 0.95;
+}
+
+header .block:nth-child(1) button.chrome {
+    background-color: var(--clr-Soft_Blue);
+    border: 2px solid var(--clr-Soft_Blue);
+    color: white;
+    margin-right: 10px;
+}
+
+header .block:nth-child(1) button.firefox {
+    background-color: white;
+    border: 2px solid var(--clr-Soft_Blue);
+    color: var(--clr-Soft_Blue);
+}
+
+header .block:nth-child(2) {
+    width: 50%;
+    text-align: center;
+}
+
+header .block:nth-child(2) .illustration {
+    height: auto;
+    width: 70%;
+    min-width: 386px;
+}
+
