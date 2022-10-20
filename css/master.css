@@ -1,0 +1,81 @@
+:root {
+    /* Typography (Fonts) */
+    --ff-Primary: 'Rubik', sans-serif;
+
+    /* Colors (Primary) */
+    --clr-Soft_Red: hsl(0, 94%, 66%);
+    --clr-Soft_Blue: hsl(231, 69%, 60%);
+
+    /* Colors (Neutral) */
+    --clr-Grayish_Blue: hsl(229, 8%, 60%);
+    --clr-Dark_Blue: hsl(229, 31%, 21%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--ff-Primary);
+    font-size: 18px;
+    color: var(--clr-Grayish_Blue);
+}
+
+ul,
+li,
+a {
+    list-style-type: none;
+    text-decoration: none;
+    color: var(--clr-Dark_Blue);
+}
+
+.max-width {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.navbar {
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navigation li {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--clr-Dark_Blue)
+}
+
+.navigation li:hover {
+    color: var(--clr-Soft_Red);
+}
+
+
+.navigation .btn {
+    border: 2px solid var(--clr-Soft_Red);
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: var(--clr-Soft_Red);
+}
+
+.navigation .btn {
+    color: white;
+}
+
+.navigation .btn:hover {
+    color: var(--clr-Soft_Red);
+}
+
+.navigation .btn:hover {
+    background-color: transparent;
+}
